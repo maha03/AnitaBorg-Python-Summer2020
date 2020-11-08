@@ -17,5 +17,6 @@ class two_D(one_D):
         super().dot_prod(a1,b1)
         print(op)
 
+# call two_D
 childobj=two_D([1,2],[3,4],[5,6],[7,8],[])
 print(childobj.op)
