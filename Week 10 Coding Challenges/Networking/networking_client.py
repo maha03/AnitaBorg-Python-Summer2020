@@ -1,9 +1,19 @@
-'''This python script is to define client and bind with server by establishing a socket connection.
-A connection object is created to send encrypted messages with maximum size of 1024 bytes to the server
+#Script: networking_client.py
+#Author: Mahalakshmi Subramanian
+#Anita Borg - Python Certification Course
+
+#DESCRIPTION: A python script to define client and bind with server by establishing a socket connection.
+#             A connection object is created to send encrypted messages with maximum size of 1024 bytes to the server
+
+''' Sample data
+Client sends: Jlkqv Mvqelk
+Server sends back:Received: Jlkqv Mvqelk
+Translation: monty python
 '''
 
 import socket
 import time
+
 # declare client host and port
 host = 'localhost'
 port = 4000

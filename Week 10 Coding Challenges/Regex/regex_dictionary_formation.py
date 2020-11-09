@@ -1,25 +1,24 @@
+#Script: regex_dictionary_formation.py
+#Author: Mahalakshmi Subramanian
+#Anita Borg - Python Certification Course
+
+#DESCRIPTION: A python program to print the dictionary of name and scores from the given string "MathScores"
+
+'''Sample input:
+MathScores = """
+Ann got 99 and Maria got 95,
+David got 84 and Jose got 21
+"""
+Sample output:{'Ann': '99', 'Maria': '95', 'David': '84', 'Jose': '21'}
+'''
+
 import re
-textStr = "From john.doe@ab.etc Thu Jun 15 02:04:09 2010"
-#Q1: extract email extension
-output=re.findall(r'\@(\w+\S\w+)',textStr)
-
-#list_of_string=textStr.split('@')
-#output=re.findall(r'\w+\S\w+',list_of_string[1])
-print(output)
-
-#Q2: Extract email from the above string using re.findall
-output=re.findall(r'[^"From"]\w+\.?\w+\@\w+\.\w+',textStr)
-print(output)
-
-#Q3: Extract 'From: Using the :' from the above string x. [Use re.findall]
-x ='From: Using the : character'
-output=re.findall(r'^F.+:',x)
-print(output)
 
 MathScores = """
 Ann got 99 and Maria got 95,
 David got 84 and Jose got 21
 """
+
 MathScores_List=MathScores.split(',')
 line1=MathScores_List[0].split()
 line2=MathScores_List[1].split()
@@ -39,5 +38,3 @@ while count<4:
         j += 4
         count += 1
 print(Mathscores_Dict)
-
-
